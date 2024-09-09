@@ -14,15 +14,22 @@ const ListEmployeeComponent = () => {
             "firstName":"john",
             "lastName":"jr",
             "email":"john@email.com"
+        },
+        {
+            "id":3,
+            "firstName":"elon",
+            "lastName":"musk",
+            "email":"elon@email.com"
         }
     ]
 
   return (
-    <div>
-      <h2>List of Employees</h2>
-      <table>
+    <div className='container'>
+      <h2 className='text-center'>List of Employees</h2>
+      <table className='table table-striped table-bordered'>
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Employee First Name</th>
                 <th>Employee Last Name</th>
                 <th>Employee Email Id</th>
